@@ -1,0 +1,114 @@
+div, h1,h2,h3,p,a {
+    font-size: 16px;
+  line-height: 1.625;
+  color: rgb(80, 208, 234);
+  font-family: Nova Flat, sans-serif;
+  text-align: center;
+}
+.topnav{
+  position: center;
+}
+.score{
+  
+  margin: 1% 10% 10% 95%;
+  width:10px
+}
+i{
+  color:white;
+  opacity:1;
+}
+.restart-btn{
+  top : 10px;
+  
+  background-color: rgb(149, 49, 174); /* purple background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 12px; /* Some padding */
+  cursor: pointer; /* Mouse pointer on hover */
+  opacity: .5;
+  border-radius: 5px;
+ 
+}
+
+/* Darker background on mouse-over */
+.restart-btn:hover {
+  opacity: 1;
+  
+}
+#sec2 {
+  font-weight: bold;
+  font-size: 80px;
+  position: right 100%;
+  height: 500px;
+  width: 700px;
+  margin: 1px 30px 1px 30px;
+  padding:10px 30px 1px 30px;
+}
+#sec3 {
+  margin: 1px 30px 10px 30px;
+  padding:1px 30px 10px 30px; 
+}
+h1 {
+    font-size: 32px; 
+}
+.man {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  width:50px;
+  height:50px;
+  background-image: url('man.png');
+  background-size: cover;
+  
+}
+
+.obstacle {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  width: 110px;
+  height: 40px;
+  background-image: url('car.png');
+  bottom: 0px;
+}
+@keyframes slideright {
+  from {
+      background-position: 60000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+@-webkit-keyframes slideright {
+  from {
+      background-position: 80000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+#city {
+  position: absolute;
+  bottom: 0px;
+  background-image: url('city.png');
+  background-repeat: repeat-x;
+  animation: slideright 400s infinite linear;
+  -webkit-animation: slideright 400s infinite linear;
+  width: 75%;
+  height: 45%;
+  
+}
+a, h2 {
+    font-size: 25px;
+  line-height: 1.625;
+  color: rgb(80, 208, 234);
+}
+
+body {
+    background-color: rgb(55, 11, 97);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover
+
+}
